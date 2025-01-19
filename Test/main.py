@@ -14,12 +14,12 @@ import socket
 import struct
 
 # Параметры для отправки
-DEST_IP = "localhost"  # IP сервера
+DEST_IP = "127.0.0.1"  # IP сервера
 DEST_PORT = 5555           # Порт сервера
 SOURCE_IP = "8.8.8.8"      # Поддельный исходный IP
 
 # Данные, которые мы отправим
-MESSAGE = "1.1.1.1\n80"  # IP и порт для TCP-подключения
+MESSAGE = "1.1.1.1:80"  # IP и порт для TCP-подключения
 
 
 def checksum(data):
